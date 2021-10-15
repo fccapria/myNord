@@ -1,1 +1,1 @@
-myNord
+My nord based rice :)
