@@ -1,4 +1,4 @@
-#My nord based rice :)
+# My nord based rice :)
 
 ![combo](https://user-images.githubusercontent.com/62179193/137538209-6f9e041a-a209-4ff7-b73d-07b210a6db6c.png)
 
