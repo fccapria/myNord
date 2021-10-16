@@ -164,6 +164,20 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
+# Launcher mode.
+mode "launcher - (w)atskdesk (t)elegram (f)irefox thunder(b)ird" {
+	bindsym w exec whatsdesk
+	bindsym t exec telegram-desktop
+	bindsym f exec firefox
+	bindsym b exec thunderbird
+
+	bindsym Return mode "default"
+	bindsym Escape mode "default"
+	bindsym $mod+Shift+d mode "default"
+}
+
+bindsym $mod+Shift+d mode "launcher - (w)atskdesk (t)elegram (f)irefox thunder(b)ird"
+
 # Nord theme.
 
     # Window color settings
