@@ -23,6 +23,9 @@ gaps outer 15
 bindsym $mod+Shift+F12 exec --no-startup-id "xfce4-screenshooter -r"
 #exec --no-startup-id xfce4-clipman
 
+# Lockscreen.
+bindsym $mod+Shift+x exec ~/scripts/lock.sh
+
 # Audio.
 set $refresh_i3status killall -SIGUSR1 i3status
 bindsym XF86AudioRaiseVolume exec --no-startup-id pactl set-sink-volume @DEFAULT_SINK@ +10% && $refresh_i3status
