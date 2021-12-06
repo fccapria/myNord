@@ -7,11 +7,12 @@ font pango:Iosevka Regular 8
 for_window [class="^.*"] border pixel 2 
 
 # Some apps at startup.
-exec --no-startup-id ~/.screenlayout/lenovo.sh
+exec --no-startup-id ~/.config/lenovo.sh
 exec --no-startup-id setxkbmap it
 exec --no-startup-id /usr/bin/dunst
 exec --no-startup-id numlockx 
 exec --no-startup-id redshift -c ~/.config/redshift/redshift.conf
+exec --no-startup-id nm-applet
 exec_always --no-startup-id nitrogen --restore
 exec_always --no-startup-id ~/.config/polybar/launch.sh --forest
 exec --no-startup-id picom
@@ -25,7 +26,7 @@ bindsym $mod+Shift+F12 exec --no-startup-id "xfce4-screenshooter -r"
 #exec --no-startup-id xfce4-clipman
 
 # Lockscreen.
-bindsym $mod+Shift+x exec --no-startup-id ~/scripts/lock.sh
+bindsym $mod+Shift+x exec --no-startup-id ~/.config/lock.sh
 
 # Brightness.
 bindsym XF86MonBrightnessUp exec "xbacklight -inc 10"
@@ -42,7 +43,7 @@ bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOU
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec --no-startup-id kitty
+bindsym $mod+Return exec --no-startup-id alacritty
 
 # kill focused window
 bindsym $mod+Shift+q kill
